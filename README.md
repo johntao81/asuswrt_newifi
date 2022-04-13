@@ -1,5 +1,5 @@
 # asuswrt_newifi
-Notes to build the asus RT-AC1200HP firmware for newifi
+Notes to build the asus RT-AC1200HP firmware for newifi R6830
 
 https://gist.github.com/KyonLi/6fa5d6e391d82856e35168e851303784
 
