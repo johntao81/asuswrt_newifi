@@ -17,9 +17,9 @@ docbook-xsl-* libstdc++5 texinfo dos2unix xsltproc make pkg-config
 prepare source to, ex, ～/asuswrt
 ```bash
 cd ~
-wget https://dlsvr04.asus.com/pub/ASUS/wireless/RT-AC1200HP/GPL_RT_AC1200HP_30043808228.zip
-unzip GPL_RT_AC1200HP_30043808228.zip
-tar zxvf GPL_RT-AC1200HP_3.0.0.4.380.8228-g3af35f9.tgz
+wget https://dlcdnets.asus.com/pub/ASUS/wireless/RT-AC1200HP/GPL_RT_AC1200HP_30043808457.zip
+unzip GPL_RT_AC1200HP_30043808457.zip
+tar zxvf GPL_RT-AC1200HP_3.0.0.4.380.8457-*.tgz
 ```
 
 setup development system
@@ -34,7 +34,7 @@ export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-
 
 ```bash
 cd release/
-vi src/router/shared/sysdeps/ralink/mt7620.c
+nano src/router/shared/sysdeps/ralink/mt7620.c
 ```
 
 search for `RTAC1200HP` edit it as follows
@@ -53,7 +53,7 @@ enum {
 ```
 
 ```bash
-vi src/router/rc/init.c
+nano src/router/rc/init.c
 ```
 
 search for `RTAC1200HP` edit it as follows
@@ -74,7 +74,7 @@ case MODEL_RTAC1200HP:
 ```
 
 ```bash
-vi src-ra-mt7620/linux/linux-2.6.36.x/drivers/net/raeth/raether.c
+nano src-ra-mt7620/linux/linux-2.6.36.x/drivers/net/raeth/raether.c
 ```
 
 search for `RTAC1200HP` edit it as follows
@@ -87,7 +87,7 @@ search for `RTAC1200HP` edit it as follows
 ## Fix 5GHz Wi-Fi
 
 ```bash
-vi src-ra-mt7620/linux/linux-2.6.36.x/drivers/net/wireless/rlt_wifi_ap/Makefile
+nano src-ra-mt7620/linux/linux-2.6.36.x/drivers/net/wireless/rlt_wifi_ap/Makefile
 ```
 
 edit first line as follows
@@ -98,7 +98,7 @@ obj-m += rlt_wifi.o
 ## Enable TProxy
 
 ```bash
-vi src-ra-mt7620/linux/linux-2.6.36.x/config_base
+nano src-ra-mt7620/linux/linux-2.6.36.x/config_base
 ```
 
 set y to these three config blow:
