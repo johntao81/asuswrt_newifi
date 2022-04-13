@@ -1,6 +1,8 @@
 # asuswrt_newifi
 Notes to build the asus RT-AC1200HP firmware for newifi
 
+https://gist.github.com/KyonLi/6fa5d6e391d82856e35168e851303784
+
 # [GUIDE] Build AsusWRT for newifi mini on Ubuntu 14.04 32bit
 
 ## Manually preparing the build environment
